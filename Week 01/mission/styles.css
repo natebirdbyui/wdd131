@@ -1,0 +1,57 @@
+
+header{
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding:0px;
+    text-align: left;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    color: #006EB6;
+    font-style: underline;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-thickness: .5px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 25px;
+}
+body{
+    font-size: 20px;
+    font-family: "Times New Roman";
+
+    
+    line-height: 1.5;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+main{
+    align-content: left;
+    
+}
+.byui-logo{
+    align-content: center;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.pageborder {
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid black;
+    padding: 100px;
+    box-sizing: border-box;    
+}  
