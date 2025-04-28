@@ -3,8 +3,18 @@ header{
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
-
 }
+
+.dark{
+    background-color: #333;
+    color: white;
+}
+
+.dark select, .dark option{
+    background-color: #333;
+    color: white;
+}
+
 .content{
     max-width: 600px;
     margin: 0 auto;
