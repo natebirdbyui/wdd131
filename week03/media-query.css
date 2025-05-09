@@ -1,0 +1,29 @@
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 15px;
+    background-color: rgb(55, 55, 224);
+    font-family: Roboto, "Roboto", sans-serif;
+}
+main{
+    columns: 1;
+    gap: 1rem
+}
+
+section {
+    margin: 1rem 0;
+    padding: 15px;
+    background-color: white;
+    background-color: white;
+}
+
+@media (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+    main {
+        columns: 2;
+    }
+}
