@@ -9,7 +9,7 @@
     --secondary-font: Mooli, san-serif;
 }
 .menuButton{
-    display: none
+    display: none /*hide the menu*/
 }
 body {
     font-family: var(--primary-font);
