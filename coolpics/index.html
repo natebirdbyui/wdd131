@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WDD 131 | Cool Pics!</title>
         <link rel="stylesheet" href="coolpics.css">
-        <script src="coolpics.js"></script>
+        <script src="coolpics.js" defer></script>
         <meta name="description" content="A collection of cool pictures.">
         <meta name="author" content="Nathan Bird">
     </head>
@@ -13,13 +13,13 @@
     <body>
         <header>
             <h1>Cool Pics 📸</h1>
-            <h2>Menu</h2>
-            <nav class="mainNav">                
+            <button class="menuButton">Menu</button>
+            <nav class="menuNav">                
                 <a href="index.html">Home</a>
                 <a href="people.html">People</a>
                 <a href="places.html">Places</a>
                 <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>            
+                <a href="contact.html">Contact</a>             
             </nav>
         </header>
 
@@ -53,9 +53,7 @@
                 <figure>
                     <img src="images/norris-sm.jpeg" alt="picture">
                 </figure>
-                
-
-            </main>
+            </section>
         </main>
 
         <footer> 
@@ -63,6 +61,14 @@
                 &copy; 2025 Not a real site 😀.                
             </p>
         </footer>
+        <!--Viewer-->
+        <dialog class="viewer">
+            <div class ="viewerContent">                
+                <button class="closeViewer">X</button>
+                <img src="images/norris-full.jpeg" alt="full photo">
+            </div>
+        </dialog>
+        
     </body>
 
 </html>
