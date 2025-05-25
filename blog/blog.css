@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital@0;1&display=swap');
+.filters, nav, .book-right {
+    border: 1px solid #EFC69B;
+    height: 100%;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+.main-nav {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: end; 
+    list-style: none; 
+    gap: 1rem; 
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #AF1B3F; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 1rem;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.book-center img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.book-center {
+    grid-column: 2 / 4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+}
+
+.book-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row:1/2;
+    align-items: flex-end;
+    padding: 10px;
+    border-right: 1px solid #EFC69B;    
+    height: 100%;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family:"Lora", Impact, serif;
+
+}
+.book-title{
+    color:#AF1B3F
+}
+.book-date{
+    font-size: 1.5rem;
+}
+.book-ages, .book-genre {
+    font-size: 1.2rem;
+}

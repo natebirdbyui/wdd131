@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Enhanced Accessible Modal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+    <h1>Accessible Modal Demo</h1>
+    <button id="openModalBtn">Open Modal</button>
+    <div aria-live="polite" class="visually-hidden" id="statusMessage"></div>
+    </header>
+
+    <main>
+    <p>This page includes an accessible modal with animations, a live region, and a form.</p>
+    </main>
+
+  <!-- Accessible Modal -->
+    <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="modal" hidden>
+    <div class="modal-content" role="document">
+        <h2 id="modalTitle">Contact Us</h2>
+        <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" id="closeModalBtn">Cancel</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

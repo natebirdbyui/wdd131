@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Example Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    a, button, input {
+      font-size: 1rem;
+    }
+
+    button:focus, a:focus, input:focus {
+      outline: 2px solid #005fcc;
+      outline-offset: 4px;
+    }
+
+    .high-contrast {
+      color: #000;
+      background-color: #fff;
+    }
+
+    nav a {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body class="high-contrast">
+  <header>
+    <h1>Welcome to My Accessible Website</h1>
+    <nav>
+      <a href="#main">Skip to Main Content</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>This webpage is designed with accessibility in mind. It uses semantic HTML, supports keyboard navigation, and has strong color contrast.</p>
+      <img src="cat.jpg" alt="Orange tabby cat lying on a sofa" width="300">
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Accessible Site</p>
+  </footer>
+</body>
+</html>
