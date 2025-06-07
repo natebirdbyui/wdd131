@@ -1,0 +1,202 @@
+/* Web page set up*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(190, 190, 190);
+    font-family: 'Lato', 'Helvetica Light', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    padding: 40px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+form {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    height: 50%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.card-both-sides{
+    position: relative;
+    aspect-ratio: 16 / 10;   
+}
+
+/*CREDIT CARD STYLE*/
+.card-front,
+.card-back {    
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    max-height: 400px;
+    padding: 1.25em;
+    border-radius: 1em;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #bdbbbb;
+    position: absolute;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    display: grid;
+}
+
+/* Front of card setup */
+.card-front {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 55px;
+    width: auto;
+}
+
+/* Back of Card setup */
+.card-back {
+    top: 10%;
+    left: 30%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 1.25em;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    text-transform: none;
+}
+
+.form-row {
+    display: flex;  
+    gap: 20px;
+}
+
+
+
+.card-back::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+}
+.front-card-bottom-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 20px;
+}
+.expiry-date {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    grid-column: 2/3;
+}
+.expiry-date input {
+    width:30%;
+}
+
+.ccv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    grid-column: 1/2;
+}
+.ccv input {
+    width: 15%;
+    text-align: center;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: flex-end;    
+}
+
+button[type="submit"] {
+    position: relative;
+    margin-top: 15%;
+    padding: 12px;
+    background-color: rgb(109, 109, 109);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    width: 25%;
+    align-self: flex-end;
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+.card-number input {
+    font-weight: bold;
+    width: 99%;
+}
