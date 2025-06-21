@@ -84,10 +84,6 @@ h2 {
     margin: 0.5em 0;
 }
 
-.recipe-description {
-    display: none;
-}
-
 .tag {
         font-weight: bold;
         background-color: white;
@@ -114,10 +110,10 @@ footer {
 
 
 
-@media (min-width: 600px) {
-    /*.recipe-description {
-        display: block;
-    }*/
+@media (min-width: 600px) and (max-width: 959px) {
+    .recipe-description {
+        display: none;
+    }
 
     .recipe-container {
         display: flex;
