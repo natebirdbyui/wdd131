@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Page Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 80vh;
+    }
+
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 20px;
+      flex: 1 1 200px;
+    }
+
+    .main {
+      background-color: #e0e0e0;
+      padding: 20px;
+      flex: 3 1 400px;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    @media (max-width: 700px) {
+      .layout {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Flexbox Website</h1>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Links or info go here.</p>
+    </aside>
+
+    <main class="main">
+      <h2>Main Content</h2>
+      <p>This is where the main content lives. Flexbox lets it grow larger than the sidebar.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>

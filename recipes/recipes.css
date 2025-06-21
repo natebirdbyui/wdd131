@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cormorant+Garamond=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Cormorant Garamond', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Image & Header Setup */
+header {    
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    
+}
+
+#header-title {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-weight: 500;
+    font-size: 4.5em;
+    color: black;
+    margin: 0.5em;
+}
+
+#title-logo {
+    height: 7.5em;
+    width: auto;    
+    border-radius: 0;
+}
+
+/*Seacrch Bar*/
+#search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+#search-bar input[type="text"] {
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+#search-button img {
+    height: 1em;
+}
+
+/*recipe card and container*/
+h2 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    margin: 0.5em 0;
+}
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: white;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: gold;
+    margin: 0.5em 0;
+}
+
+.recipe-description {
+    display: none;
+}
+
+.tag {
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        padding: 0.2em 0.5em;
+        border-radius: 0.3em;
+        display: inline-block;
+        margin-top: 0.5em;
+        border-color: black;
+        border: 1px solid black;
+        height:1rem;
+        width: 3rem;
+    }
+/*footer*/
+footer {
+    flex-direction: row;    
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+
+
+@media (min-width: 600px) {
+    /*.recipe-description {
+        display: block;
+    }*/
+
+    .recipe-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipe-card {
+    width: 90%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+}
+@media (min-width: 960px) {
+    .recipe-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 960px;;
+    }
+    
+    .recipe-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 1em;
+        margin: 1em 0;
+        padding: 1em;
+        border-radius: 1em;
+        background-color: white;
+        width: 100%;
+    }
+
+    .recipe-card.img {
+        width: 100%; /* fills left column */
+        height: auto;
+        grid-column: 1/2;
+    }
+
+    .recipe-details,
+    .recipe-description,
+    .rating,
+    h2 {
+        width: 100%; /* fills right column */
+        grid-column: 2/3;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .recipe-details h2 {
+        margin-top: 0;
+    }
+
+    .rating {
+        font-size: 1.2em;
+        color: gold;
+        margin: 0.5em 0;
+    }
+
+    .tag {    
+        grid-column: 2/3;      
+    }
+}
+
+}
