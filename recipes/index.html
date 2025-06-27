@@ -7,7 +7,7 @@
     <meta name="keywords" content="recipes, cooking, food, culinary">
     <meta name="author" content="Nathan Bird">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
     <title>WDD 131 | Recipes</title>
 
     <!-- Social Media Tags-->
@@ -28,31 +28,15 @@
     <main>
         <!--Search Bar-->
         <section id="search-bar">            
-            <input type="text" id="search-input" placeholder="Find a recipe">
+            <input type="text" id="search-input" placeholder="Find a recipe...Click on the magnifying glass to search ➜ ">
             <button id="search-button"><img src="images/search.svg" alt="search button"></button>
         </section>
 
-        <!--Pull recipes from JavaScript-->
+        <!--Pull recipes from JavaScript-->     
         
-        <section id="recipe-section" class="recipe-container"></section>
-            <article class="recipe-card">
-                <img src="images/apple-crisp.jpg" alt="Apple Crisp with vanilla ice cream">
-                
-                <div class="recipe-details">
-                    <!-- Tags -->
-                    <span class="tag">dessert</span>
-
-                    <!-- Recipe Title -->
-                    <h2>Apple Crisp</h2>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        ⭐⭐⭐⭐☆
-                    </span>
-                    <p class="recipe-description">
-                        This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-                    </p>
-                </div>
-
-            </article>
+        <section id="recipe-random" class="recipe-container">        
+        <!--Random Recipe Card with img, div class "recipe-details" tags, and recipe-description
+        Need to have a random generator made in js and displayed here-->
         </section>
         
     </main>
