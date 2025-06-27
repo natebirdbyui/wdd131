@@ -42,7 +42,7 @@ function renderRecipe(recipe) {
 }
 
 function loadRecipes() {
-	const section = document.querySelector("#recipe-section");
+	const section = document.querySelector("#recipe-random");
 	recipes.forEach(recipe => {
 		const card = renderRecipe(recipe);
 		section.appendChild(card);
