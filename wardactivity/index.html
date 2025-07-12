@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C5 Ward Activities</title>
+    <title>C5 Ward Activities | Home</title>
+    <meta name="description" content="Home page for C5 Ward Activities">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="author" content="Nathan Bird">
+    <script src="main.js" defer></script>
 </head>
-<body>
-    <a href="site-plan.html">Site Plan</a>
+<body> 
+    <header>
+        <a id="logo_link" href="index.html">
+            <img id="logo" class="logo" src="images/rsz_rsz_c5wardactlogo.jpg" alt="C5 Logo">
+        </a>
+        <h1>C5 Ward Activities Committee</h1>   
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>  
+
+        </nav>
+    </header>
+
+    <main>        
+        <!--Navigation will be on a sidebar in desktop mode-->
+        <!--Navigation will be a hamburger menu in mobile mode-->
+            <h2>Welcome to the C5 Ward Activities Committee</h2>
+            <!--Navigation Sidebar-->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                    <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <ul class="dropdown-content" id="activitiesMenu">
+                            <li><a href="wardcampout.html">Ward Campout</a></li>                    
+                        </ul>
+                    </li>
+
+                    <li><a href="calendar.html">Calendar</a></li>
+
+                    <li class="theme-switch">                        
+                        <label for ="themeView" class="dark">View Display Theme:</label>
+                            <select id ="themeView">
+                                <option value="light" selected>Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                    </li>
+                </ul>
+            </nav>
+            <!--Main Content-->
+            <div class="mainp1">
+                <div id="mainpagephoto1">
+                    <img id="fellowship" src="images/rsz_fellowship1.jpg" alt="fellowship">
+                    <p id="homepagep1"> Welcome to the C5 Ward Activities Page! As part of the C5 Ward Activities member,
+                    we want to help spread awareness for our future events this 2025 year! We want to give access to the C5 Ward members.
+                    <br><br>
+                    Also, it will help them to know what activities are coming up, what we are planning, and what items the members need to bring. 
+                    Plus, it will help inform members to invite their ministering families and non-members to these events. 
+                    Having excellent outcomes for our ward activities will help strengthen the relationship between the members, 
+                    ministering families, our own families, and friends.</p>                
+                </div>             
+                
+            </div>
+
+                <div class="mainp2">
+                    <!--Movie/Photo Album-->
+                    <div class="homepage-movie-photo-scroll">
+                        <button class="scroll-btn left" aria-label="Previous Slide">&#10094;</button>
+
+                        <div class="album-reel" id="album-reel"><!--Resize the album items-->
+                            <div class="album-item active"><!--This will set for one file at a time-->
+                                <img src="images/moviephotoalbum/rsz_rsz_trunkortreat.jpg" alt="trunk or treat" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <img src="images/moviephotoalbum/20241220_154546.jpg" alt="christmas party1" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <img src="images/moviephotoalbum/20241220_160224.jpg" alt="christmas party2" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <img src="images/moviephotoalbum/20250329_182902.jpg" alt="chili cook off1" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <img src="images/moviephotoalbum/20250329_182906.jpg" alt="chili cook off2" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <img src="images/moviephotoalbum/20250329_184054.jpg" alt="chili cook off3" loading="lazy">
+                            </div>
+                            <div class="album-item">
+                                <video controls preload="none" loading="lazy">
+                                    <source src="images/moviephotoalbum/hotdogthow.mp4" type="video/mp4">                                    
+                                </video>
+                            </div>
+                        </div>
+
+                        <button class="scroll-btn right" aria-label="Next Slide">&#10095;</button>
+                    </div>
+                    <p id="homepagep2">"Our most prized friend is Jesus Christ Himself.
+                        Is there any greater assurance than His 'I will be on your right hand and on your left, … and mine angels round about you, to bear you up' (D&C 84:88)? 
+                        So often those 'angels round about' are our friends." Elder Ronald A. Rasband Of the Quorum of the Twelve Apostles.<br><br>
+
+                        "We should bear in mind that the success of a given activity cannot always be judged by its size. 
+                        Rather, it must be judged by its effect on the lives of those participating." 
+                        President James E. Faust, Second Counselor in the First Presidency, "Strengthening the Inner Self," Ensign, Feb. 2003, 4.
+                    <br><br>
+                    </p>
+                </div>
+            
+    </main>
+
+    <footer>
+        <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
+                <div class="footersitemap">
+                    <h4>Site Map</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wardcampout.html">Ward Campout</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>   
+                
+                <div class="footersiteplan">    
+                    <p><a href="site-plan.html">Site-plan</a> </p>
+                </div>    
+                <div class="footerwebclicks">                  
+                    <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                        <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+                    </a>
+                </div>
+    </footer>
 </body>
 </html>

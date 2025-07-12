@@ -1,0 +1,58 @@
+body.wardcampout main {
+    grid-template-columns: 1fr 4fr;
+}
+
+body.wardcampout .sidebar-nav {
+    align-self: stretch;
+    height: 100%;
+}
+
+.sidebar-nav {
+    grid-row: 1/7;
+}
+
+#ward-calendar {
+    max-width: 320px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.calendar-header h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar-weekdays, .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    background-color: #fcdb58;
+    border: 1px solid #ddd;
+    color:black;
+}
+
+.calendar-day {
+    border: 1px solid #ddd;
+    padding: 12px 0;
+    text-align: center;
+    cursor: default;
+}
+
+.calendar-day.empty {
+    border: none;
+    background: transparent;
+    cursor: default;
+}
+
+.calendar-day.campout-day {
+    background-color: #ED1C24;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}

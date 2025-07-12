@@ -1,0 +1,384 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+main > * {
+    align-self: stretch;
+}
+
+/* header */
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    gap: 20px;    
+}
+
+#logo_link {
+    align-self: start;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+/*Hamburger menu--Hide in desktop */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+
+/*main */
+main {
+    flex: 1; /* Allow main to grow and fill available space */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    padding: 20px;   
+    align-items: start;
+    
+}
+
+main h2 {
+    grid-column: 2/3;
+    text-align: center;
+    width: 100%;
+}
+#fellowship {
+    float: right;
+    margin: 0 15px 15px 0;
+    max-width: 300px;
+    height:auto;
+    border-radius: 10px;
+}
+
+.campout-content {
+    align-self: stretch;
+}
+#homepagep1,
+#homepagep2,
+#campout-details1,
+#campout-details2 {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.campout-photo {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+}
+
+
+
+.mainp1,
+.mainp2 {
+    grid-column: 2/3;
+    position: relative;
+}
+
+/*countdown timer */
+#countdown {
+    font-size: 1.5em;    
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 2/3;
+}
+
+/* ward campout calendar */
+#campout-calendar { 
+    display: grid;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    grid-column: 2/3;
+}
+
+/* sidebar */
+.sidebar-nav {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-row: 1/4;
+    background-color: #fcdb58;
+    border-radius: 10px;  
+    height: 100%; 
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.sidebar-nav li,
+.sidebar-nav button {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sidebar-nav a,
+.sidebar-nav button,
+.sidebar-nav li,
+.sidebar-nav label {
+    display: block;
+    width: 85%;
+    flex-wrap: wrap;
+    background-color: #fcdb58;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25%;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.25em;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav button:hover,
+.sidebar-nav li:hover,
+.sidebar-nav label:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropbutton {
+    background-color: #fcdb58;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.dropbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: #fcdb58;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.dropdown-content a {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content.show {
+    display: flex;
+}
+
+/* Album/Video Scroll */
+.homepage-movie-photo-scroll{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;    
+}
+
+.album-reel{
+    position: relative;
+    height: 360px;
+}
+
+.album-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-item.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.album-item img,
+.album-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+/* Scroll buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fcdb58;
+    color: black;
+    font-size: 2rem;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    opacity: 1;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    text-align: center;
+    padding: 10px;    
+}
+
+footer a:hover {
+    background-color: black;
+    color: white;
+}
+
+footer a:visited {
+    color: #ED1C24;
+}
+
+.footerwebclicks{
+    grid-row: 1/3;
+    grid-column: 4/5;
+    justify-content: center;
+    align-content: center;
+}
+.footersiteplan{
+    grid-column: 1/2;
+}
+
+.footersitemap {
+    grid-column: 2/4;
+}
+
+/* light and dark mode */
+body.dark, header.dark, footer.dark, body.dark .homepage-movie-photo-scroll  {
+    background-color: black;
+    color: white;
+}
+
+body.light, header.light, footer.light, body.light .homepage-movie-photo-scroll {
+    background-color: white;
+    color: black;
+}
+body.dark #countdown{
+    color: white;
+}
+
+body.light #countdown{
+    color: black;
+}
+
+/*Mobile Views */
+@media (max-width: 800px) {
+    main{
+        padding: 10px;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    main h2,
+    .mainp1,
+    .mainp2,
+    .campout-photo,
+    #countdown,
+    #campout-calendar,
+    #campout-details1,
+    #campout-details2 {
+        grid-column: 1 / -1;
+    }
+
+    .sidebar-nav a,
+    .sidebar-nav button,
+    .sidebar-nav label {
+        padding: 12px 16px;
+        font-size: 1.1em;
+    }
+    .sidebar-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #fcdb58;
+        transform: translateX(-100%);
+        z-index: 1000;
+        border-radius: 0;
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+    }
+
+    .sidebar-nav.open {
+        transform: translateX(0);
+    }  
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

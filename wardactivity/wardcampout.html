@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C5 Ward Activities | Ward Campout</title>
+    <meta name="description" content="Campout page for C5 Ward Activities">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/wardcampout.css">
+    <meta name="author" content="Nathan Bird">
+    <script src="wardcampout-calendar.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body class="wardcampout">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/rsz_rsz_c5wardactlogo.jpg" alt="C5 Logo">
+        </a>
+        <h1>C5 Ward Activities Committee</h1>
+    </header>
+
+    <main>
+        <!--Navigation will be on a sidebar in desktop mode-->
+        <!--Navigation will be a hamburger menu in mobile mode-->
+            <h2>Ward Campout</h2>
+            <!--Navigation Sidebar-->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                    <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <ul class="dropdown-content" id="activitiesMenu">
+                            <li><a href="wardcampout.html">Ward Campout</a></li>                    
+                        </ul>
+                    </li>
+
+                    <li><a href="calendar.html">Calendar</a></li>
+
+                    <li class="theme-switch">                        
+                        <label for ="themeView" class="dark">View Display Theme:</label>
+                            <select id ="themeView">
+                                <option value="light" selected>Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                    </li>
+                </ul>
+            </nav>
+
+        <p><strong>Join us for a fun-filled campout with the C5 Ward! Enjoy fellowship, food, and outdoor activities.</strong></p>
+
+        <div class ="campout-content">
+            <div id="campout-details1">
+                <h3>Details</h3>
+                <ul>
+                    <li>Date: Friday August 29th (1 pm) - Saturday August 30th (11am)</li>
+                    <li>Location: Pinetop West Campground <br>
+                        150 Pinetop Rd. <br>
+                        Idaho City, ID 83716 </li>
+                    <li>Food: The ward will provide breakfast. Please plan accordingly for your own meals.</li>
+                </ul>
+            </div>
+            <div class="campout-photo">
+                <img src="images/rsz_1campout.png" alt="Campout Photo" />
+            </div>
+            <div id="campout-details2">
+                <h3>Activities</h3>
+                <ul>
+                    <li><strong>Friday, August 29th</strong>You may arrive at 1pm or later</li>
+                            <li>Basketball/Picketball- 1:15pm-4:15pm</li>
+                            <li>Swimming- All Day</li>
+                            <li>Grassy Field-All Day
+                                <ul>
+                                    <li>Kickball</li>
+                                    <li>Ultimate Frisbee</li>
+                                    <li>Capture the Flag</li>
+                                    <li>Glowstick</li>
+                                </ul>
+                            </li>
+                            <li>Pavilion-All Day
+                                <ul>
+                                    <li>Board Games</li>
+                                    <li>Card Games</li>
+                                    <li>Puzzles</li>
+                                </ul>
+                            </li>
+                            <li>Campfire- 8:00pm-9:30pm</li>
+                        </ul>
+                        
+                        <li><strong>Saturday, August 30th</strong>
+                            <ul>
+                                <li>Breakfast- 8:00am-9:30am</li>
+                                <li>Pavilion- 8:00am-11:00am</li>
+                                <li>Swimming 8:00am-11:00am</li>
+                                <li>Packed out no later than 11:00am</li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="campout-calendar">
+            Campout Calendar:
+        </div>
+
+        <h2 class="wardcampouth2">Countdown to Ward Campout</h2>
+            <p id="countdown"></p>
+    </main>
+
+    <footer>
+        <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
+                <div class="footersitemap">
+                    <h4>Site Map</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wardcampout.html">Ward Campout</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>   
+                
+                <div class="footersiteplan">    
+                    <p><a href="site-plan.html">Site-plan</a> </p>
+                </div>    
+                <div class="footerwebclicks">                  
+                    <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                        <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+                    </a>
+                </div>
+    </footer>
+</body>
+</html>
