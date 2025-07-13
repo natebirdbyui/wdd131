@@ -74,6 +74,7 @@ body.wardcampout .sidebar-nav {
     grid-template-columns: 1fr; /* stack columns vertically */
     padding: 10px;
     align-items: center;
+    margin: 0 auto;
     }
 
     #fellowship {
