@@ -66,3 +66,23 @@ body.wardcampout .sidebar-nav {
     font-weight: bold;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 800px) {
+    body.wardcampout main {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr; /* stack columns vertically */
+    padding: 10px;
+    align-items: center;
+    }
+
+    #fellowship {
+    float: none;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    }
+
+    .mainp1, .mainp2 {
+        text-align: center;
+    }
+}
