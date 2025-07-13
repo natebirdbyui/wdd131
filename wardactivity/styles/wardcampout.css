@@ -67,14 +67,15 @@ body.wardcampout .sidebar-nav {
     border-radius: 50%;
 }
 
+/* Mobile view */
 @media screen and (max-width: 800px) {
     body.wardcampout main {
     display: flex;
-    flex-direction: column;
-    grid-template-columns: 1fr; /* stack columns vertically */
+    flex-direction: column;    
     padding: 10px;
     align-items: center;
     margin: 0 auto;
+    max-width: 100vw;    
     }
 
     .campout-photo {
