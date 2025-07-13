@@ -35,11 +35,12 @@ function changeTheme() {
     if(selectedTheme === 'dark')
     {        
         body.classList.add('dark');
+        body.classList.remove('light');
     }
     else
     {        
-        body.classList.remove('dark');
-        
+        body.classList.add('light');
+        body.classList.remove('dark');        
     }
 }
 

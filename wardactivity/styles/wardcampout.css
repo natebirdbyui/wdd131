@@ -2,6 +2,16 @@ body.wardcampout main {
     grid-template-columns: 1fr 4fr;
 }
 
+main p,
+main a,
+.campout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
 body.wardcampout .sidebar-nav {
     align-self: stretch;
     height: 100%;
