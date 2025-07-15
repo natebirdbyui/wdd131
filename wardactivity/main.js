@@ -26,8 +26,10 @@ const themeView = document.getElementById('themeView'); // Get the select elemen
 const body = document.body;
 const logo = document.getElementById('logo');
 
-themeView.addEventListener('change', changeTheme); // Add an event listener to the select element
-// When the selected option changes, the changeTheme function will be called
+document.addEventListener('DOMContentLoaded', () => {
+    changeTheme(); 
+    themeView.addEventListener('change', changeTheme); 
+});
 
 function changeTheme() {
     const selectedTheme = themeView.value;

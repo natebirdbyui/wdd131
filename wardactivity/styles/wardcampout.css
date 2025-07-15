@@ -83,10 +83,13 @@ body.wardcampout .sidebar-nav {
     box-sizing: border-box;
     }
 
-    .campout-photo,
+    
     #campout-details1,
-    #campout-details2,
-    .campout-content {
+    #campout-details2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
         width: 100%;
         box-sizing: border-box;
         padding: 0 10px;
