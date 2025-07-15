@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     html += `</div><div class="calendar-days">`;
 
     for (let i = 0; i < firstDay; i++) {
-    html += `<div class="calendar-day empty"></div>`;
+        html += `<div class="calendar-day empty"></div>`;
     }
 
     for (let day = 1; day <= daysInMonth; day++) {
-    const isCampoutDay = campoutDays.includes(day);
-    html += `<div class="calendar-day${isCampoutDay ? " campout-day" : ""}">${day}</div>`;
+        const isCampoutDay = campoutDays.includes(day);
+        html += `<div class="calendar-day${isCampoutDay ? " campout-day" : ""}">${day}</div>`;
     }
 
     html += `</div>`;

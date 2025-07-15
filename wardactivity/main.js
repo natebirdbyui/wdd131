@@ -34,13 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function changeTheme() {
     const selectedTheme = themeView.value;
 
-    if(selectedTheme === 'dark')
-    {        
+    if(selectedTheme === 'dark') {        
         body.classList.add('dark');
         body.classList.remove('light');
-    }
-    else
-    {        
+    } else {
         body.classList.add('light');
         body.classList.remove('dark');        
     }

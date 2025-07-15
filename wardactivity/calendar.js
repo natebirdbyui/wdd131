@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "2025-08-30": "Ward Campout ends @ 11 AM",
     "2025-09-01": "Labor Day",
     "2025-10-31": "Halloween",
+    "2025-11-11": "Veterans Day",
     "2025-11-26": "Thanksgiving",
     "2025-12-06": "Ward Christmas Party 6 PM @ Stake Center",
+    "2025-12-24": "Christmas Eve",
     "2025-12-25": "Christmas Day",
     "2025-12-31": "New Year's Eve",
     };
@@ -80,18 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-
     function showEventDetails(dateStr) {
-    eventList.innerHTML = '';
-    if (events[dateStr]) {
-        const li = document.createElement('li');
-        li.textContent = `${dateStr}: ${events[dateStr]}`;
-        eventList.appendChild(li);
-    } else {
-        const li = document.createElement('li');
-        li.textContent = 'No events on this day.';
-        eventList.appendChild(li);
-        }
+        eventList.innerHTML = '';
+        if (events[dateStr]) {
+            const li = document.createElement('li');
+            li.textContent = `${dateStr}: ${events[dateStr]}`;
+            eventList.appendChild(li);
+        } else {
+            const li = document.createElement('li');
+            li.textContent = 'No events on this day.';
+            eventList.appendChild(li);
+            }
     }
 
     prevBtn.addEventListener('click', () => {
