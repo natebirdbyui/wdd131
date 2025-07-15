@@ -75,16 +75,38 @@ body.wardcampout .sidebar-nav {
     padding: 10px;
     align-items: center;
     margin: 0 auto;
-    max-width: 100vw;    
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
     }
 
-    .campout-photo {
-    float: none;
-    margin: 0 auto 20px;
-    max-width: 100%;
+    .campout-photo,
+    #campout-details1,
+    #campout-details2,
+    .campout-content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
     }
 
-    .mainp1, .mainp2 {
-        text-align: center;
+    .campout-photo img {
+        width: 100%;        
+        height: auto;
+        display: block;
     }
+
+    .calendar-weekdays,
+    .calendar-days {
+        grid-template-columns: repeat(7, 1fr);
+        width: 100%;
+    }
+
+    .sidebar-nav {
+        width: 100%;
+    }
+
+    *{
+        box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    }
+
 }
