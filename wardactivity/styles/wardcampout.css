@@ -70,6 +70,12 @@ body.wardcampout .sidebar-nav {
     border-radius: 50%;
 }
 
+#signUpLink {
+    color:#ED1C24;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+}
 /* Mobile view */
 @media screen and (max-width: 800px) {
     body.wardcampout main {
