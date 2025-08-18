@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "2025-08-29": "Ward Campout starts @ 1 PM!",
     "2025-08-30": "Ward Campout ends @ 11 AM",
     "2025-09-01": "Labor Day",
+    "2025-10-25": "Trunk-or-Treat & Chili Cook-off @ 6-8 PM",
     "2025-10-31": "Halloween",
     "2025-11-11": "Veterans Day",
     "2025-11-26": "Thanksgiving",

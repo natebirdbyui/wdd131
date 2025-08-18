@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C5 Ward Activities | Ward Trunk-or-Treat</title>
+    <meta name="description" content="Ward Trunk-or-Treat page for C5 Ward Activities">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="author" content="Nathan Bird">
+    <script src="trunkortreatcalendar.js" defer></script>
+    <script src="main.js" defer></script>
+    
+</head>
+<body> 
+    <header>
+        <a id="logo_link" href="index.html">
+            <img id="logo" class="logo" src="images/rsz_rsz_c5wardactlogo.jpg" alt="C5 Logo">
+        </a>
+        <h1>C5 Ward Activities Committee</h1>   
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>  
+    </header>
+
+    <main>        
+        <!--Navigation will be on a sidebar in desktop mode-->
+        <!--Navigation will be a hamburger menu in mobile mode-->
+            <h2>Ward Trunk-or-Treat & Chili Cook-off</h2>
+            <!--Navigation Sidebar-->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                    <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <ul class="dropdown-content" id="activitiesMenu">
+                            <li><a href="wardcampout.html">Ward Campout</a></li>
+                            <li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="calendar.html">Calendar</a></li>
+
+                    <li class="theme-switch">                        
+                        <label for ="themeView" class="dark">View Display Theme:</label>
+                            <select id ="themeView">
+                                <option value="light">Light</option>
+                                <option value="dark" selected>Dark</option> <!-- Default to dark mode, I like the dark mode :) -->
+                            </select>
+                    </li>
+                </ul>
+            </nav>
+            <!--Main Content-->
+            <div class="mainp1">
+                
+                <div id="totp1">
+                    <p>Welcome to the Ward Trunk-or-Treat page! The season is changing and the leaves are falling. It's the perfect time for our annual Trunk-or-Treat event!</p>
+                    <div id="trunkortreatphoto1">
+                    <img id="trunkortreat" src="images/rsz_rsz_trunkortreat.jpg" alt="Trunk-or-Treat">
+                    <p>Join us for a fun evening of costumes, candy, and community spirit. Decorate your car trunk and bring treats to share with the children of our ward.</p>
+                    <p>Get creative with costumes and trunk decorations!
+                </div>
+            </div>           
+                
+            </div>
+            <div class="mainp2">
+                <div id="totp2">
+                    <p>This event we will be having our Chili Cook-off and Cornbread as well!</p>
+                
+                <img id="chilicookoff" src="images/rsz_chilicookoff-nobckgnd.jpg" alt="Chili Cook-off">
+                </div>
+            <div class="campout-content"> <!-- Reuse class for same spacing and structure -->
+                <div id="tot-details1">
+                    <h3>Details</h3>
+                    <ul>
+                        <li><strong>Date:</strong> Saturday, October 25th, 2025</li>
+                        <li><strong>Time:</strong> Chili Cook-off: 6:00 PM - 7:00 PM<br>Trunk-or-Treat: 7:00 PM - 8:00 PM</li>
+                        <li><strong>Location:</strong> Stake Center - Linden Building</li>
+                        <li><strong>Chili Cook-off:</strong> Bring your best chili recipe to compete for the title of "Best Chili in the Caldwell 5th Ward!"</li>
+                        <li><strong>Trunk-or-Treat:</strong> Decorate your car trunk and bring treats to share with the children of our ward.</li>
+                        <li><strong>Parking:</strong>If you are participating in the Trunk-or-Treat, please park in the red section.</li>
+                        <strong>If you are not participating in the Trunk-or-Treat,</strong>please park in the yellow section.</strong><br><br>
+                        <img id="tot-parking" src="images/tot_parking.jpg" alt="Trunk-or-Treat Parking">
+                    </ul>
+                        
+                </div>               
+            
+
+                <div id="trunkortreat-calendar">
+                    Trunk-or-Treat Calendar:
+                </div>
+
+                <h2 class="wardcampouth2">Countdown to Trunk-or-Treat</h2>
+                <p id="tot-countdown"></p>
+            </div>
+
+        </main>
+
+    <footer>
+        <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
+                <div class="footersitemap">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wardcampout.html">Ward Campout</a></li>
+                        <li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>   
+                
+                <div class="footersiteplan">    
+                    <p><a href="site-plan.html">Site-plan</a> </p>
+                </div>    
+                <div class="footerwebclicks">                  
+                    <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                        <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+                    </a>
+                </div>
+    </footer>
+</body>
+</html>

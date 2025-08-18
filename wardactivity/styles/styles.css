@@ -82,6 +82,22 @@ main h2 {
     font-size: 1.2em;
 }
 
+#tot-details1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    font-size: 1.2em;
+}
+#tot-details1 h3 {
+    display:flex;
+    text-align: start;
+    align-content: start;
+    margin-right: 10px;
+
+}
+
 .campout-photo {
     display: flex;
     justify-content: center;
@@ -113,6 +129,57 @@ main h2 {
     padding: 20px;
     margin: 20px;
     grid-column: 2/3;
+}
+
+/* Trunk-or-Treat Calendar */
+.calendar-title h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em;
+}
+
+.calendar-cell {
+    border: 1px solid var(--border-color, #ccc);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: var(--cell-bg, #fcdb58);
+    color: black;
+}
+
+.calendar-header {
+    background-color: var(--header-bg, #888);
+    color: black;
+}
+
+.calendar-cell.empty {
+    background-color: transparent;
+    border: none;
+}
+
+.calendar-cell.event-day {
+    background-color: orange;
+    color: black;
+    border: 2px solid darkred;
+    font-weight: bold;
+}
+
+#totp1,
+#totp2,
+#tot-countdown {
+    margin: 20px 0;
+    align-content: center;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 /* sidebar */
