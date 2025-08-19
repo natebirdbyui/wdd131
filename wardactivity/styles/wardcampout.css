@@ -21,7 +21,7 @@ body.wardcampout .sidebar-nav {
 }
 
 .sidebar-nav {
-    grid-row: 1/7;
+    grid-row: 1/10;
 }
 
 #ward-calendar {
@@ -70,12 +70,25 @@ body.wardcampout .sidebar-nav {
     border-radius: 50%;
 }
 
-#signUpLink {
+#signUpLink,
+.campout-rules a {
     color:#ED1C24;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
+
+.campout-rules {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+#campout-rulesh3 {
+    text-align: center;
+}
+
+
 /* Mobile view */
 @media screen and (max-width: 800px) {
     body.wardcampout main {
@@ -91,7 +104,8 @@ body.wardcampout .sidebar-nav {
 
     
     #campout-details1,
-    #campout-details2{
+    #campout-details2,
+    #campout-details3 {
         display: flex;
         flex-direction: column;
         align-items: center;

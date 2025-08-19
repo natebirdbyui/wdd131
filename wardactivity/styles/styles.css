@@ -83,20 +83,34 @@ main h2 {
 }
 
 #tot-details1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    margin: 20px;
+    margin: 20px auto;       /* centers the whole section */
     font-size: 1.2em;
+    max-width: 700px;        /* keeps it from stretching too wide */
+    text-align: center;      /* centers the heading */
 }
-#tot-details1 h3 {
-    display:flex;
-    text-align: start;
-    align-content: start;
-    margin-right: 10px;
 
+#tot-details1 h3 {
+    margin: 0 auto 15px auto;
 }
+
+#tot-details1 ul {
+    display: inline-block;   /* makes the list itself centered */
+    text-align: left;        /* but list items are left-aligned */
+    list-style-position: inside;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+#tot-details1 li {
+    margin-bottom: 6px;
+}
+#tot-parking {
+    display: block;       /* makes the image behave like a block element */
+    margin: 15px auto;    /* centers it horizontally and adds vertical spacing */
+    max-width: 100%;      /* keeps it responsive */
+    height: auto;         /* maintain aspect ratio */
+}
+
 
 .campout-photo {
     display: flex;
