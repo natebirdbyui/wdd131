@@ -87,6 +87,9 @@ body.wardcampout .sidebar-nav {
 #campout-rulesh3 {
     text-align: center;
 }
+#campout-details3 a {
+    color: red
+}
 
 
 /* Mobile view */
