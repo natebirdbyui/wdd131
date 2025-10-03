@@ -130,6 +130,7 @@ main h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 /*countdown timer */
@@ -500,5 +501,17 @@ body.light #countdown{
     }
     body.dark #hamburgerBtn {
         color: white;
+    }
+    .tot-logos {
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: center;        
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .tot-logos img {
+        max-width: 100%;
+        height: auto;
     }
 }
