@@ -126,6 +126,12 @@ main h2 {
     position: relative;
 }
 
+.tot-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 /*countdown timer */
 #countdown {
     font-size: 1.5em;    
