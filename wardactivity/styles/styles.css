@@ -118,7 +118,12 @@ main h2 {
     grid-column: 2/3;
 }
 
-
+#tot-details1 a {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}
 
 .mainp1,
 .mainp2 {
