@@ -35,7 +35,7 @@ function countDownTimerTot() {
     const countdownEl = document.getElementById("tot-countdown");
     if (!countdownEl) return;
 
-    const countDownDate = new Date("October 25, 2025 18:00:00").getTime();
+    const countDownDate = new Date("October 25, 2025 17:00:00").getTime();
     const x = setInterval(function () {
         const now = new Date().getTime();
         const distance = countDownDate - now;
