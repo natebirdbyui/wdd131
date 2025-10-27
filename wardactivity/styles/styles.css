@@ -201,7 +201,8 @@ main h2 {
 
 #totp1,
 #totp2,
-#tot-countdown {
+#tot-countdown,
+#christmasparty-countdown {
     margin: 20px 0;
     align-content: center;
     text-align: center;

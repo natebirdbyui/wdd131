@@ -21,6 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
     "2025-12-24": "Christmas Eve",
     "2025-12-25": "Christmas Day",
     "2025-12-31": "New Year's Eve",
+    "2026-01-01": "New Year's Day",
+    "2026-01-20": "Martin Luther King Jr. Day",
+    "2026-02-14": "Valentine's Day",
+    "2026-02-17": "Presidents' Day",
+    "2026-03-13": "Karaoke Game Night @ 6 PM Stake Center",
+    "2026-05-25": "Memorial Day",
+    "2026-07-04": "Independence Day",
+    "2026-09-06": "Labor Day",
+    "2026-10-30": "Trunk-or-Treat & Chili Cook-off @ 6 PM",
+    "2026-10-31": "Halloween",
+    "2026-11-11": "Veterans Day",
+    "2026-11-26": "Thanksgiving",
+    "2026-12-19": "Ward Christmas Party 6 PM @ Stake Center",
+    "2026-12-24": "Christmas Eve",
+    "2026-12-25": "Christmas Day",
+    "2026-12-31": "New Year's Eve",
     };
 
     function renderCalendar(date) {
