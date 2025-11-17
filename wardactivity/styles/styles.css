@@ -208,6 +208,13 @@ main h2 {
     text-align: center;
     font-size: 1.2em;
 }
+#christmasparty-countdown {
+    font-size: 1.5em;    
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 2/3;
+    
+}
 
 /* sidebar */
 .sidebar-nav {
@@ -215,7 +222,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    grid-row: 1/4;
+    grid-row: 1/7;
     background-color: #fcdb58;
     border-radius: 10px;  
     height: 100%; 

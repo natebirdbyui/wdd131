@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const year = 2025;
     const month = 11; // December (0-based)
-    const highlightDays = [6];
+    const highlightDays = [20];
 
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -37,7 +37,7 @@ function countDownTimerChristmasParty() {
     const countdownEl = document.getElementById("christmasparty-countdown");
     if (!countdownEl) return;
 
-    const countDownDate = new Date("December 6, 2025 18:00:00").getTime();
+    const countDownDate = new Date("December 20, 2025 18:00:00").getTime();
     const x = setInterval(function () {
         const now = new Date().getTime();
         const distance = countDownDate - now;
