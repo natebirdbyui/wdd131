@@ -89,4 +89,10 @@ export function initHamburgerMenu() {
             document.body.style.overflow = "";
         }
     });
+    hamburgerBtn.addEventListener("touchstart", (e) => {
+        sidebar.classList.toggle("open");
+        document.body.style.overflow =
+            sidebar.classList.contains("open") ? "hidden" : "";
+    });
+
 }
