@@ -2,7 +2,7 @@
 
 export async function loadLinks() {
     try {
-        const response = await fetch("/js/links.json");
+        const response = await fetch("./js/links.json");
         const links = await response.json();
 
         // Sidebar nav
