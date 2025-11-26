@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C5 Ward Activities | Home</title>
     <meta name="description" content="Home page for C5 Ward Activities">
-    <link rel="stylesheet" href="styles/styles.css">
     <meta name="author" content="Nathan Bird">
-    <script src="main.js" defer></script>
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body> 
     <header>
@@ -28,11 +28,9 @@
                     <li><a href="index.html">Home</a></li>
 
                     <li class="dropdown">
-                    <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <button class="dropbutton" id="activitiesToggle">Activities</button>
                         <ul class="dropdown-content" id="activitiesMenu">
-                            <!--<li><a href="wardcampout.html">Ward Campout</a></li>-->
-                            <!--<li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>-->
-                            <li><a href="christmasparty.html">Ward Christmas Party</a></li>
+                            <!-- Links from links.json will be injected here -->
                         </ul>
                     </li>
 
@@ -40,10 +38,10 @@
 
                     <li class="theme-switch">                        
                         <label for ="themeView" class="dark">View Display Theme:</label>
-                            <select id ="themeView">
-                                <option value="light">Light</option>
-                                <option value="dark" selected>Dark</option> <!-- Default to dark mode, I like the dark mode :) -->
-                            </select>
+                        <select id ="themeView">
+                            <option value="light">Light</option>
+                            <option value="dark" selected>Dark</option>
+                        </select>
                     </li>
                 </ul>
             </nav>
@@ -111,25 +109,18 @@
 
     <footer>
         <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
-                <div class="footersitemap">
-                    <h4>Sitemap</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <!--<li><a href="wardcampout.html">Ward Campout</a></li>
-                        <li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>-->
-                        <li><a href="christmasparty.html">Ward Christmas Party</a></li>
-                        <li><a href="calendar.html">Calendar</a></li>
-                    </ul>
-                </div>   
-                
-                <div class="footersiteplan">    
-                    <p><a href="site-plan.html">Site-plan</a> </p>
-                </div>    
-                <div class="footerwebclicks">                  
-                    <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
-                        <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
-                    </a>
-                </div>
+        <div class="footersitemap">
+            <ul>Sitemap</ul>
+            <li id="footerlinks"></li>
+        </div>    
+        <div class="footersiteplan">    
+            <p><a href="site-plan.html">Site-plan</a></p>
+        </div>    
+        <div class="footerwebclicks">                  
+            <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

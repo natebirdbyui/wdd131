@@ -1,0 +1,89 @@
+#tot-details1 {
+    margin: 20px auto;       /* centers the whole section */
+    font-size: 1.2em;
+    max-width: 700px;        /* keeps it from stretching too wide */
+    text-align: center;      /* centers the heading */
+}
+
+#tot-details1 h3 {
+    margin: 0 auto 15px auto;
+}
+
+#tot-details1 ul {
+    display: inline-block;   /* makes the list itself centered */
+    text-align: left;        /* but list items are left-aligned */
+    list-style-position: inside;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+#tot-details1 li {
+    margin-bottom: 6px;
+}
+#tot-parking {
+    display: block;       /* makes the image behave like a block element */
+    margin: 15px auto;    /* centers it horizontally and adds vertical spacing */
+    max-width: 100%;      /* keeps it responsive */
+    height: auto;         /* maintain aspect ratio */
+}
+
+
+.campout-photo {
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
+}
+
+#tot-details1 a {
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}
+.tot-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* Trunk-or-Treat Calendar */
+.calendar-title h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em;
+}
+
+.calendar-cell {
+    border: 1px solid var(--border-color, #ccc);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: var(--cell-bg, #fcdb58);
+    color: black;
+}
+
+.calendar-header {
+    background-color: var(--header-bg, #888);
+    color: black;
+}
+
+.calendar-cell.empty {
+    background-color: transparent;
+    border: none;
+}
+
+.calendar-cell.event-day {
+    background-color: orange;
+    color: black;
+    border: 2px solid darkred;
+    font-weight: bold;
+}

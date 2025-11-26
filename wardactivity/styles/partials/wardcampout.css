@@ -1,7 +1,9 @@
 body.wardcampout main {
     grid-template-columns: 1fr 4fr;
 }
-
+.campout-content {
+    align-self: stretch;
+}
 main p,
 main a,
 .campout-content {
@@ -89,6 +91,16 @@ body.wardcampout .sidebar-nav {
 }
 #campout-details3 a {
     color: red
+}
+/* ward campout calendar */
+#campout-calendar { 
+    display: grid;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    grid-column: 2/3;
 }
 
 

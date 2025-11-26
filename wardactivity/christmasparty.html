@@ -7,8 +7,8 @@
     <meta name="description" content="Christmas Party page for C5 Ward Activities">
     <link rel="stylesheet" href="styles/styles.css">
     <meta name="author" content="Nathan Bird">
-    <script src="main.js" defer></script>
-    <script src="christmasparty.js" defer></script>
+    <script type="module" src="/js/main.js" defer></script>
+    <script type="module" src="/js/christmasparty.js" defer></script>
 </head>
 <body> 
     <header>
@@ -25,29 +25,27 @@
         <h2>Ward Christmas Party</h2>
         <!--Navigation Sidebar-->
         <nav class="sidebar-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
 
-                <li class="dropdown">
-                <button class="dropbutton" id="activitiesToggle">Activities</button>
-                    <ul class="dropdown-content" id="activitiesMenu">
-                        <!--<li><a href="wardcampout.html">Ward Campout</a></li>
-                        <li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>-->
-                        <li><a href="christmasparty.html">Ward Christmas Party</a></li>
-                    </ul>
-                </li>
+                    <li class="dropdown">
+                        <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <ul class="dropdown-content" id="activitiesMenu">
+                            <!-- Links from links.json will be injected here -->
+                        </ul>
+                    </li>
 
-                <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
 
-                <li class="theme-switch">                        
-                    <label for ="themeView" class="dark">View Display Theme:</label>
+                    <li class="theme-switch">                        
+                        <label for ="themeView" class="dark">View Display Theme:</label>
                         <select id ="themeView">
                             <option value="light">Light</option>
-                            <option value="dark" selected>Dark</option> <!-- Default to dark mode, I like the dark mode :) -->
+                            <option value="dark" selected>Dark</option>
                         </select>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
         <!--Main Content-->
         <div class="mainp1">
             <div id="mainpagephoto1">                    
@@ -116,25 +114,18 @@
 
     <footer>
         <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
-                <div class="footersitemap">
-                    <h4>Sitemap</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <!--<li><a href="wardcampout.html">Ward Campout</a></li>
-                        <li><a href="trunkortreat.html">Ward Trunk-or-Treat</a></li>-->
-                        <li><a href="christmasparty.html">Ward Christmas Party</a></li>
-                        <li><a href="calendar.html">Calendar</a></li>
-                    </ul>
-                </div>   
-                
-                <div class="footersiteplan">    
-                    <p><a href="site-plan.html">Site-plan</a> </p>
-                </div>    
-                <div class="footerwebclicks">                  
-                    <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
-                        <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
-                    </a>
-                </div>
+        <div class="footersitemap">
+            <ul>Sitemap</ul>
+            <li id="footerlinks"></li>
+        </div>    
+        <div class="footersiteplan">    
+            <p><a href="site-plan.html">Site-plan</a></p>
+        </div>    
+        <div class="footerwebclicks">                  
+            <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

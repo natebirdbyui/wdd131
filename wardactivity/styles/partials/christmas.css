@@ -1,0 +1,16 @@
+#totp1,
+#totp2,
+#tot-countdown,
+#christmasparty-countdown {
+    margin: 20px 0;
+    align-content: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+#christmasparty-countdown {
+    font-size: 1.5em;    
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 2/3;
+    
+}

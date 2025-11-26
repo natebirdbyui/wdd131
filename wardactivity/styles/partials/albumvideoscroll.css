@@ -1,0 +1,65 @@
+/* Album/Video Scroll */
+.homepage-movie-photo-scroll{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;    
+}
+
+.album-reel{
+    position: relative;
+    height: 360px;
+}
+
+.album-item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-item.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.album-item img,
+.album-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+/* Scroll buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fcdb58;
+    color: black;
+    font-size: 2rem;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    opacity: 1;
+}

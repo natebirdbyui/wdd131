@@ -1,0 +1,18 @@
+
+/* light and dark mode */
+body.dark, header.dark, footer.dark, body.dark .homepage-movie-photo-scroll  {
+    background-color: black;
+    color: white;
+}
+
+body.light, header.light, footer.light, body.light .homepage-movie-photo-scroll {
+    background-color: white;
+    color: black;
+}
+body.dark #countdown{
+    color: white;
+}
+
+body.light #countdown{
+    color: black;
+}

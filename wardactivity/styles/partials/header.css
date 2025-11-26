@@ -1,0 +1,28 @@
+/* header */
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    gap: 20px;    
+}
+
+#logo_link {
+    align-self: start;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+/*Hamburger menu--Hide in desktop */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}

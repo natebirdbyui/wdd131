@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+main > * {
+    align-self: stretch;
+}
+
+
+
+
+/*main */
+main {
+    flex: 1; /* Allow main to grow and fill available space */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    padding: 20px;   
+    align-items: start;
+    
+}
+
+main h2 {
+    grid-column: 2/3;
+    text-align: center;
+    width: 100%;
+}
+#fellowship {
+    float: right;
+    margin: 0 15px 15px 0;
+    max-width: 300px;
+    height:auto;
+    border-radius: 10px;
+}
+.mainp1,
+.mainp2 {
+    grid-column: 2/3;
+    position: relative;
+}
+
+
+
+/*countdown timer */
+#countdown {
+    font-size: 1.5em;    
+    margin-top: 20px;
+    text-align: center;
+    grid-column: 2/3;
+}
+
+#homepagep1,
+#homepagep2,
+#campout-details1,
+#campout-details2 {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.2em;
+}

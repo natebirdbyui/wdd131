@@ -1,0 +1,36 @@
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    text-align: center;
+    padding: 10px;    
+}
+
+footer a:hover {
+    background-color: black;
+    color: white;
+}
+
+footer a:visited {
+    color: #ED1C24;
+}
+
+.footerwebclicks{
+    grid-row: 1/3;
+    grid-column: 4/5;
+    justify-content: center;
+    align-content: center;
+}
+.footersiteplan{
+    grid-column: 1/2;
+}
+
+.footersitemap {
+    grid-column: 2/4;
+}
+#footerlinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
