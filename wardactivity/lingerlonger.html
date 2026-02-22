@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C5 Ward Activities | Home</title>
+    <meta name="description" content="Home page for C5 Ward Activities">
+    <meta name="author" content="Nathan Bird">
+    <script type="module" src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body> 
+    <header>
+        <a id="logo_link" href="index.html">
+            <img id="logo" class="logo" src="images/rsz_rsz_c5wardactlogo.jpg" alt="C5 Logo">
+        </a>
+        <h1>C5 Ward Activities Committee</h1>   
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>  
+    </header>
+
+    <main>        
+        <!--Navigation will be on a sidebar in desktop mode-->
+        <!--Navigation will be a hamburger menu in mobile mode-->
+            <h2>Linger Longer!</h2>
+            <!--Navigation Sidebar-->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <button class="dropbutton" id="activitiesToggle">Activities</button>
+                        <ul class="dropdown-content" id="activitiesMenu">
+                            <!-- Links from links.json will be injected here -->
+                        </ul>
+                    </li>
+
+                    <li><a href="calendar.html">Calendar</a></li>
+
+                    <li class="theme-switch">                        
+                        <label for ="themeView" class="dark">View Display Theme:</label>
+                        <select id ="themeView">
+                            <option value="light">Light</option>
+                            <option value="dark" selected>Dark</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <!--Main Content-->
+            <div class="mainp1">
+                <div id="mainpagephoto1">
+                    <img id="fellowship" src="images/rsz_fellowship1.jpg" alt="fellowship">  
+                </div>
+            </div>    
+            <p id="homepagep1"> Linger Longers! We are having Linger Longers after the second hour of church every Fast Sunday!
+
+                    </p> 
+                <div class="mainp2">
+                    
+                </div>
+                    <p id="homepagep2">Please come and join us for our Linger Longer! It is a great opportunity to have fellowship with other members of the ward!
+                        If you would like to help! Please <strong><a href="https://www.signupgenius.com/go/10C0D49A5A72DA2FAC70-62514445-linger?fbclid=IwY2xjawQIKO1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeX3jYz6X1E_0Otx-XtxHGtStae8v5-beH1RvD8IGkTURqZbmdpO9j9CryQrE_aem_IkJ5NaBxBWcZo4pePOeONQ#/">sign up here!</a></strong>
+                    <br><br>
+                    </p>
+                
+            
+    </main>
+
+    <footer>
+        <p>C5 Ward Activities &copy; 2025<br>Nathan Bird</p>
+        <div class="footersitemap">
+            <ul>Sitemap</ul>
+            <li id="footerlinks"></li>
+        </div>    
+        <div class="footersiteplan">    
+            <p><a href="site-plan.html">Site-plan</a></p>
+        </div>    
+        <div class="footerwebclicks">                  
+            <a id="lds" href="https://churchofjesuschrist.org/?lang=eng" target="_blank">
+                <img src="images/rsz_1200x675church_logo.jpg" alt="LDS Icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
