@@ -14,16 +14,23 @@ export function initCalendar() {
     let currentDate = new Date();
 
     const events = {
-        "2025-08-29": "Ward Campout starts @ 1 PM!",
-        "2025-08-30": "Ward Campout ends @ 11 AM",
-        "2025-09-01": "Labor Day",
-        "2025-10-25": "Trunk-or-Treat & Chili Cook-off @ 5-8 PM",
-        "2025-10-31": "Halloween",
-        "2025-11-11": "Veterans Day",
-        "2025-11-26": "Thanksgiving",
-        "2025-12-20": "Ward Christmas Party 6 PM @ Montana Building",
-        "2025-12-24": "Christmas Eve",
-        "2025-12-25": "Christmas Day"
+        "2026-06-07": "Linger Longer after second hour",
+        "2026-07-04": "Independence Day",
+        "2026-07-05": "Linger Longer after second hour",
+        "2026-08-15": "Ward BBQ @ Stake Center 6pm",
+        "2026-09-06": "Linger Longer after second hour",
+        "2026-09-07": "Labor Day",
+        "2026-09-22": "Fall Equinox",
+        "2026-10-03": "General Conference 10am-12pm & 2pm-4pm",
+        "2026-10-04": "General Conference 10am-12pm & 2pm-4pm",
+        "2026-10-11": "(Final) Linger Longer after second hour",
+        "2026-10-29": "Ward Trunk or Treat & Chili Cook-off @ Middleton Building 6pm",
+        "2026-10-31": "Halloween",
+        "2026-11-26": "Thanksgiving",
+        "2026-12-05": "Ward Christmas Party @ Middleton Building 6pm",
+        "2026-12-21": "Winter Solstice",
+        "2026-12-24": "Christmas Eve",
+        "2026-12-25": "Christmas"
     };
 
     function renderCalendar(date) {
