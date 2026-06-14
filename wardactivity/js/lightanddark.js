@@ -1,5 +1,5 @@
 // lightanddark.js
-
+console.log("lightanddark.js loaded");
 export function initThemeSwitch() {
 
     const themeView = document.getElementById("themeView");

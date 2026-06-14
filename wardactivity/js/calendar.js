@@ -1,5 +1,5 @@
 // calendar.js
-
+console.log("calendar.js loaded");
 export function initCalendar() {
 
     const calendarBody = document.getElementById('calendar-body');

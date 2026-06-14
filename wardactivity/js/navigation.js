@@ -1,5 +1,5 @@
 // navigation.js
-
+console.log("navigation.js loaded");
 //const response = await fetch("./js/links.json?cachebust=" + Date.now());
 
 export async function loadLinks() {

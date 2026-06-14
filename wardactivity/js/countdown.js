@@ -1,5 +1,5 @@
 // countdown.js
-
+console.log("countdown.js loaded");
 export function initCountdown(targetDateString) {
 
     const countdownEl = document.getElementById("countdown");

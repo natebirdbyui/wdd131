@@ -6,6 +6,7 @@ import { initCalendar } from './calendar.js';
 import { initAlbumSlider } from './photomoviealbum.js';
 import { initThemeSwitch } from './lightanddark.js';
 import { initCountdown } from './countdown.js';
+import { initFooter } from './footer.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     loadLinks();
