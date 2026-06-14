@@ -27,7 +27,7 @@
 .sidebar-nav li,
 .sidebar-nav label {
     display: block;
-    width: 85%;
+    width: 100%;
     flex-wrap: wrap;
     background-color: #fcdb58;
     color: black;
