@@ -4,24 +4,36 @@
 
 export async function loadLinks() {
     try {
-        const response = await fetch("./js/links.json");
+        // Add a unique timestamp to prevent caching
+        const response = await fetch(
+            `./js/links.json?cachebust=${Date.now()}`
+        );
+
+        // Make sure the request succeeded
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         const links = await response.json();
 
-        // Sidebar nav
+        // Sidebar navigation
         const navContainer = document.getElementById("activitiesMenu");
         if (navContainer) {
             navContainer.innerHTML = Object.entries(links)
-                .map(([key, url]) => `<li><a href="${url}">${formatKey(key)}</a></li>`)
-                .join('');
+                .map(([key, url]) =>
+                    `<li><a href="${url}">${formatKey(key)}</a></li>`
+                )
+                .join("");
         }
 
-        // Footer
+        // Footer links
         const footerContainer = document.getElementById("footerlinks");
         if (footerContainer) {
             footerContainer.innerHTML = Object.entries(links)
-                .map(([key, url]) => `<li><a href="${url}">${formatKey(key)}</a></li>`)
-                .join('');
-
+                .map(([key, url]) =>
+                    `<li><a href="${url}">${formatKey(key)}</a></li>`
+                )
+                .join("");
         }
 
     } catch (err) {
