@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initThemeSwitch();
     initCalendar();
     initAlbumSlider();
+    initFooter();
 });
 
