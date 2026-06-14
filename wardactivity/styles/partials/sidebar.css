@@ -27,7 +27,7 @@
 .sidebar-nav li,
 .sidebar-nav label {
     display: block;
-    width: 100%;
+    width: 85%;
     flex-wrap: wrap;
     background-color: #fcdb58;
     color: black;
@@ -88,7 +88,7 @@
     text-decoration: none;
     color: black;
 
-    white-space: nowrap;   /* 🔥 prevents multi-line wrapping */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
