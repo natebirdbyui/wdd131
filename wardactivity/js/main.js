@@ -1,4 +1,6 @@
 //main.js
+console.log("main.js loaded");
+
 import { loadLinks, initDropdownMenu, initHamburgerMenu } from './navigation.js';
 import { initCalendar } from './calendar.js';
 import { initAlbumSlider } from './photomoviealbum.js';
