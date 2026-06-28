@@ -1,0 +1,14 @@
+#lingerLongerTheme {
+    text-align: center;
+    font-size: 2.0em;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#lingerLongerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

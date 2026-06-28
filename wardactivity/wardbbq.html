@@ -25,30 +25,13 @@
     <main>
         <!--Navigation will be on a sidebar in desktop mode-->
         <!--Navigation will be a hamburger menu in mobile mode-->
-            <h2>Ward BBQ</h2>
-            <!--Navigation Sidebar-->
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-
-                    <li class="dropdown">
-                        <button class="dropbutton" id="activitiesToggle">Activities</button>
-                        <ul class="dropdown-content" id="activitiesMenu">
-                            <!-- Links from links.json will be injected here -->
-                        </ul>
-                    </li>
-
-                    <li><a href="calendar.html">Calendar</a></li>
-
-                    <li class="theme-switch">                        
-                        <label for ="themeView" class="dark">View Display Theme:</label>
-                        <select id ="themeView">
-                            <option value="light">Light</option>
-                            <option value="dark" selected>Dark</option>
-                        </select>
-                    </li>
-                </ul>
-            </nav>
+        <h2>Ward BBQ</h2>
+            
+        <nav class="sidebar-nav">
+            <ul id="navList">
+            <!-- optional static fallback OR empty -->
+            </ul>
+        </nav>
 
         <p><strong>Please join us for a fun-filled BBQ with the C5 Ward! Enjoy fellowship, food, and water-fun activities.</strong></p>
         <p><strong>If you would like to sign up and RSVP, please click the link underneath to sign up!</strong></p>

@@ -20,6 +20,10 @@ export function initThemeSwitch() {
         }
     }
 
+    themeView.value = "dark";
+    body.classList.add("dark");
+    body.classList.remove("light")
+
     // Initial load
     changeTheme();
 

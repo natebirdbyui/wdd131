@@ -61,7 +61,8 @@ export function initDropdownMenu() {
     });
 
     document.addEventListener("click", (e) => {
-        if (!activitiesMenu.contains(e.target) && !activitiesToggle.contains(e.target)) {
+        if (!activitiesMenu.contains(e.target) &&
+            !activitiesToggle.contains(e.target)) {
             activitiesMenu.classList.remove("show");
         }
     });
@@ -109,4 +110,29 @@ export function initHamburgerMenu() {
     //        sidebar.classList.contains("open") ? "hidden" : "";
     //});
 
+}
+
+export function initNav() {
+    const navList = document.querySelector(".sidebar-nav ul");
+
+    if (!navList) return;
+
+    navList.innerHTML = `
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <button class="dropbutton" id="activitiesToggle">Activities</button>
+            <ul class="dropdown-content" id="activitiesMenu"></ul>
+        </li>
+
+        <li><a href="calendar.html">Calendar</a></li>
+
+        <li class="theme-switch">
+            <label for="themeView">Theme</label>
+            <select id="themeView">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </li>
+    `;
 }
